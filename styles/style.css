@@ -1,0 +1,761 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+
+/* Common Style */
+*{
+    margin:0;
+    padding:0;
+}
+
+body
+{
+    background-color:#FFFFFF;
+    position: relative;
+    font-family: 'Poppins';
+}
+
+main
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.container
+{
+    width:870px;
+    position:relative;
+    margin: 50px auto;
+}
+.container-header
+{
+    text-align: center;
+    margin-left: 50%;
+    transform:translate(-50%);
+    margin-bottom:10%;
+    font-size: 30px;
+    font-weight: bold;
+}
+.button
+{
+    display: inline-block;
+    cursor: pointer;
+}
+.button a
+{
+   text-decoration:none;
+   font-size: 16px;
+   color:#fff;
+   display: inline-block;
+   background-color:#E02C6D;
+   padding: 10px 24px;
+   transition:1s;
+   cursor: pointer;
+}
+.button .fas
+{
+    margin-right: 10px;
+}
+
+
+.button:hover a
+{
+    background-color: #18191F;
+}
+/* Header Style Start */
+.header
+{
+    height: 677px;
+    background-color: #2D25A0;
+}
+
+
+.nav-bar
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:45px 150px;  
+}
+
+.nav-link ul li 
+{
+    list-style:none;
+    padding:0 25px;
+    display: inline-block;
+    position:relative;
+}
+
+.nav-link ul li a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:16px;
+}
+.nav-link ul li::after
+{
+    content:"";
+    width:0%;
+    height:2px;
+    background:#fff;
+    display:block;
+    transition:0.5s;
+    margin-left: 0;
+}
+
+.nav-link ul li:hover::after
+{
+    width:100%;
+}
+
+#taggle
+{
+    position: absolute;
+    display: none;
+}
+.nav-btn .fas
+{
+    display: none;
+    opacity: 0;
+    font-size: 20px;
+    color: #fff;
+}
+.header-info
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap:100px;
+    margin:0 165px;
+
+}
+.half-width
+{
+    width:92%;
+}
+
+
+.half-width h1
+{
+    color:#fff;
+    font-size: 65px;
+    
+}
+
+.half-width img
+{
+    width:100%;
+    cursor: pointer;
+    transition:0.5s ;
+}
+
+.half-width img:hover
+{
+    transform: scale(1.1);
+}
+
+.half-width .button
+{
+    margin-top: 20px;
+}
+.half-width .button .fas
+{
+    margin-left:10px;
+}
+
+.half-width .button:hover a
+{
+    background-color: #fff;
+    color: #2D25A0;
+    transform: translateX(50px);
+}
+
+.nav-bar .button:hover a
+{
+    background-color: #fff;
+    color: #2D25A0;
+}
+
+/* Player Section Start */
+
+.players
+{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-row-gap:30px;
+    margin: 25px auto;
+
+}
+
+.player
+{
+    position: relative;
+    margin: auto 20px;
+    box-shadow: 0px 5px 13px #0000003f;
+}
+
+
+.player-img
+{
+    width: 92%;
+}
+
+
+.player img
+{
+    width: 100%;
+    margin: 4% 4% auto 4%;
+    display: inline-block;
+}
+
+.player-details
+{
+    width: 92%;
+    margin: 2% 4% 10% 4%;
+}
+
+.player-details h2
+{
+    font-weight: bold;
+    font-size: 20px;
+    color: #18191F;
+    margin-bottom: 10px;
+}
+
+.player-details p
+{
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+}
+
+
+
+/* Highlight Section */
+
+
+.highlight
+{
+    display:grid;
+    grid-template-columns:repeat(2,  1fr);
+    grid-column-gap: 20px;
+    align-items: center;
+    margin: auto 20px;
+}
+.highlight-img 
+{
+    width: 92%;
+}
+.highlight-img img
+{
+    width: 100%;
+    margin: 4% 4% auto 4%;
+    display: inline-block;
+}
+.highlight-info
+{
+    width:92%;
+    margin: 4% 4% auto 4%;
+    display: inline-block;
+}
+.highlight-info h2
+{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.highlight-info p
+{
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+    margin-bottom: 25px;
+}
+
+.highlight-info .button .fas
+{
+    margin-left:10px;
+}
+
+
+
+/* Best Football Team Style */
+
+.best-team
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.team
+{
+    position: relative;
+    margin: auto 20px;
+    box-shadow: 0px 5px 13px #0000003f;
+    border-radius:25px;
+}
+
+
+.team-flag
+{
+    width: 92%;
+}
+
+
+.team-flag img
+{
+    width: 100%;
+    height: 250px;
+    margin: 4% 4% auto 4%;
+    display: inline-block;
+    border-radius:25px;
+}
+
+.team-details
+{
+    text-align:center;
+    width: 92%;
+    margin: 2% 4% 10% 4%;
+}
+
+.team-details p
+{
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+}
+
+.flag-button
+{
+    margin-left:50%;
+    transform: translate(-50%);
+    margin-bottom:5%;
+}
+
+.flag-button .fas
+{
+    margin-left: 10px;
+}
+
+
+
+/* Social Media Engagement styl */
+
+.social-container
+{
+    margin:0;
+    padding:0;
+    height:350px;
+    margin-top:400px
+    
+}
+
+.social-row
+{
+    width:95%;
+    display: flex;
+    align-items: center;
+    margin-left: 50%;
+    transform:translate(-50%);
+    box-shadow:2px 2px 25px gray;
+    border-radius: 20px;
+}
+
+.social-col h1
+{
+    font-size: 40px;
+    transition:0.4s;
+    cursor:pointer;
+    display: inline-block;
+}
+
+.social-col h1:hover
+{
+    transform:scale(1.3) translateY(-10px);
+}
+
+.social-col:nth-child(1) h1:hover
+{
+    color:#E1306C;
+}
+
+.social-col:nth-child(2) h1:hover
+{
+    color:#ff0000 ;
+}
+
+.social-col:nth-child(3) h1:hover
+{
+    color:#4267B2;
+}
+
+.social-col
+{
+   
+    text-align: center;
+    width: 35%;
+    margin-top: 30px;
+
+}
+
+.social-col p
+{
+    color: #6C6C6C;
+    padding:0;
+    padding-bottom:30px;
+}
+
+
+/* Top Blog Start */
+
+.blogs
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap:26px;
+    padding: 30px;
+}
+.blog
+{
+    display:flex;
+}
+
+.blog-img img
+{
+    width: 177px;
+    height: 117px;
+}
+.blog-title
+{
+    font-size:20px;
+    margin-left:16px;
+}
+
+
+
+.author
+{
+    color: #040114;
+    font-size: 16px;
+    margin-top:6px;
+}
+
+.author a 
+{
+    color: #040114;
+    text-decoration:none;
+    font-size: 20px;
+    
+}
+
+
+
+
+/* footer style start */
+
+
+.fotter
+{
+    text-align: center;
+}
+.fotter-header
+{
+    display: inline-block;
+    margin-left:50%;
+    transform: translate(-50%);
+}
+
+.fotter-logo
+{
+    width:92%;
+}
+
+.fotter-logo img
+{
+    width: 100%;
+    margin: 4% 4% auto 4%;
+    display: inline-block;
+}
+.fotter-icon
+{
+    display: inline-block;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.fotter-icon a
+{
+    text-decoration: none;
+    color: #414141;
+    transition:0.5s;
+    cursor: pointer;
+}
+
+.fotter-icon a .fab
+{
+    width: 20px;
+    height: 20px;
+    font-size:20px;
+    color: #414141;
+    background-color:#bdbdbd;
+    margin: 0 15px 20px;
+    padding:15px;
+    border-radius: 50px;
+    transition:0.5s;
+    cursor: pointer;
+}
+
+.copyright
+{
+    font-size: 25px;
+    margin:10px 0;
+}
+
+.fotter-icon a:nth-child(1):hover .fab
+{
+    color:#fff;
+    background-color: #4267B2;
+}
+
+.fotter-icon a:nth-child(2):hover .fab
+{
+    color:#fff;
+    background-color: #E1306C;
+}
+
+.fotter-icon a:nth-child(3):hover .fab
+{
+    color:#fff;
+    background-color: #1DA1F2;
+}
+
+.fotter-icon a:nth-child(4):hover .fab
+{
+    color:#fff;
+    background-color: #ff0000;
+}
+
+
+
+/* For Tablet */
+
+@media only screen and (max-width:992px)
+{
+
+    .container
+    {
+        width: 100%;
+    }
+    .header
+    {
+        height: 600px;
+        background-color: #2D25A0;
+    }
+    .nav-bar 
+    {
+        padding: 40px 20px;
+    }
+    .nav-link ul li 
+    {
+        padding:0 10px;
+    }
+
+    .header-info 
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 50px 60px;
+    }
+    .half-width
+    {
+        width:100%;
+    }
+    .half-width h1 
+    {
+        color: #fff;
+        font-size: 40px;
+    }
+        .half-width img 
+    {
+        width: 350px;
+    }
+
+   .players, .highlight, .best-team
+   {
+       position:relative;
+       grid-template-columns:repeat(2, 1fr);
+       grid-row-gap:30px;
+       margin:0 auto;
+   }
+
+   .fotter-logo
+    {
+        width:100%;
+    }
+
+   .copyright
+    {
+        font-size:30px;
+        margin:10px 0;
+    }
+
+    .fotter-icon .fab
+    {   width: 15px;
+        height: 15px;
+        font-size:15px;
+        margin: 0 10px 20px;
+        padding:15px;
+    }
+    .team .flag-button a
+    {
+        font-size:15px;
+    }
+
+
+}
+
+
+/* For Mobile */
+
+
+@media only screen and (max-width:688px)
+{
+
+    .container
+    {
+        width: 100%;
+    }
+
+    .header-info
+    {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap:50px;
+    margin:0px;
+    }
+
+    .half-width .header-info
+    { 
+        display: inline-block;
+        margin: 4% 4% auto 4%;
+        
+    }
+    .header
+    {
+        height: 700px;
+        background-color: #2D25A0;
+    }
+
+    .half-width
+    {
+        margin:0 auto;
+        width:75%;
+    }
+    
+    .half-width h1  
+    {
+        font-size: 35px;
+    }
+
+    .nav-bar
+    {
+        padding:20px;
+        
+    }
+   
+    .nav-link ul
+    {
+        width: 91%;
+        margin-top: 20px;
+        position: absolute;
+        display:block;
+        background-color: #2D25A0;
+        text-align: center;
+        margin-bottom: 15px;
+        transition: 0.8s;
+        left:-600px;
+    }
+
+    .nav-link ul li
+    {
+        position: relative;
+        display:block;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        
+    }
+
+
+    .nav-btn .fas
+    {
+        opacity: 1;
+        display: inline-block;
+    }
+
+    #taggle:checked ~ .nav-link ul
+    {
+        left:0;
+    }
+
+    .players, .highlight, .best-team, .blogs
+    {
+        position:relative;
+        grid-template-columns:repeat(1, 1fr);
+        grid-row-gap:30px;
+        margin:0 auto;
+    }
+
+    .team .flag-button a
+    {
+        font-size:13px;
+    }
+    .blog
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog-title
+    {
+        text-align: center;
+    }
+
+    .social-row
+    {
+        flex-direction: column;
+        box-shadow:0px 0px 0px #fff;
+        border-radius: 20px;
+
+    }
+
+
+    .fotter-icon .fab
+    {   width: 10px;
+        height: 10px;
+        font-size:10px;
+        margin: 0 5px 20px;
+        padding: 8px;
+    }
+
+    .copyright
+    {
+    font-size: 14px;
+    margin:10px 0;
+    }
+}
+
+
+ /* Small DEvice  */
+
+
+@media only screen and (max-width:380px)
+{
+
+    .half-width {
+        margin: 0 auto;
+        width: 95%;
+    }
+}
